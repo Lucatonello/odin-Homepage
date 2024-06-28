@@ -1,1 +1,1 @@
-##My responsive homepage for the odin project!
+My responsive homepage for the odin project!
