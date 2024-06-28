@@ -30,7 +30,7 @@
     <main>
         <h1>My work</h1>
         <div class="projects-container">
-            <div class="box">
+            <div class="box animated">
                 <img src="../img/pexels-karikittlaus-26050321.jpg" alt="project image">     
                          
                 <div class="title-description">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
+            <div class="box animated">
                 <img src="../img/pexels-jackson-howes-692559003-2.jpg" alt="project image">     
                          
                 <div class="title-description">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
+            <div class="box animated">
                 <img src="../img/pexels-120532533-9905156 (1).jpg" alt="project image">     
                          
                 <div class="title-description">
@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
+            <div class="box animated">
                 <img src="../img/pexels-andysong1547-15880865 (1).jpg" alt="project image">     
                          
                 <div class="title-description">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
+            <div class="box animated">
                 <img src="../img/pexels-suzyhazelwood-8724292 (1).jpg" alt="project image">     
                          
                 <div class="title-description">
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
+            <div class="box animated">
                 <img src="../img/pexels-viniciusvieirafotografia-.jpg" alt="project image">     
                          
                 <div class="title-description">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
+            <div class="box animated">
                 <img src="../img/pexels-wendywei-2808679 (1).jpg" alt="project image">     
                          
                 <div class="title-description">
@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
+            <div class="box animated">
                 <img src="../img/pexels-alina-kurson-80193566-110 (1).jpg" alt="project image">     
                          
                 <div class="title-description">
@@ -151,5 +151,17 @@
             <img src="../img/pexels-radis-26311714.jpg" alt="profile picture">
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const boxes = document.querySelectorAll('.box.animated');
+            boxes.forEach(function(box) {
+                box.addEventListener('animationend', function() {
+                    box.classList.remove('animated');
+                });
+            });
+        });
+
+
+    </script>
 </body>
 </html>
