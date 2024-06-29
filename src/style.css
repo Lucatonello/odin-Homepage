@@ -22,13 +22,7 @@ header {
     justify-content: center;
     padding: 20px;
     max-width: 900px;
-}
-.heading-container:hover {
-    animation-name: spin;
-    animation-duration: 400ms;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    animation: spin 600ms;
 }
 @keyframes spin {
     from {transform:rotate(0deg);}
@@ -92,10 +86,12 @@ main {
 }
 @keyframes slide-in {
     from {
-        transform: translateX(-50%) translateY(30%);
+        transform: translateX(-10%) translateY(10%);
+        opacity: 0;
     }
     to {
         transform: translateX(0%) translateY(0%);
+        opacity: 1;
     }
 }
 .box > img {
@@ -124,7 +120,7 @@ main {
 }
 main > h1 {
     margin-left: 70px;
-    animation: slide-in 1000ms 1 linear forwards;
+    animation: slide-in 600ms 1 linear forwards;
 }
 
 /* /main */
